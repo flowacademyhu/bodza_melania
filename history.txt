@@ -1,0 +1,35 @@
+2001  mkdir szakaszzaro
+ 2002  touch szakaszzaro_feladat
+ 2003  rm szakaszzaro_feladat 
+ 2004  cd szakaszzaro/
+ 2005  touch szakaszzaro_feladat
+ 2006  ls
+ 2007  echo "Hello" > szakaszzaro_feladat 
+ 2008  cat szakaszzaro_feladat 
+ 2009  mv szakaszzaro_feladat feladat
+ 2010  ls
+ 2011  cp feladat feladat2
+ 2012  ls
+ 2013  rm feladat2
+ 2014  cat feladat 
+ 2015  grep "NetworkManager" /var/log/syslog |  cat >> ~/szakaszzaro/feladat 
+ 2016  cat feladat 
+ 2017  less feladat 
+ 2018  git clone git@github.com:flowacademyhu/bodza_melania.git
+ 2019  ls
+ 2020  cd bodza_melania/
+ 2021  cp ~/.bash_history ~/szakaszzaro/bodza_melania/
+ 2022  ls
+ 2023  cp ~/.bash_history ~/szakaszzaro/bodza_melania/.bash_history
+ 2024  ls
+ 2025  cd
+ 2026  cp /.bash_history ~/szakaszzaro/bodza_melania/.bash_history
+ 2027  cp .bash_history ~/szakaszzaro/bodza_melania/.bash_history
+ 2028  cp .bash_history ~/szakaszzaro/bodza_melania/
+ 2029  cd szakaszzaro/bodza_melania/
+ 2030  ls
+ 2031  ls -la
+ 2032  git add .
+ 2033  git commit
+ 2034  git push
+ 2035  history 
