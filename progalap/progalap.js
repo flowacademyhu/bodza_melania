@@ -49,32 +49,20 @@ console.log(containsElement([1, 2, 4, 6, 10, 15], 3));
 // 5. feladat
 
 
-const getOlder = (tomb => {
-  if (a.age > b.age) {
-      console.log(a);
-  } else if (a.age < b.age){
-      console.log(b)
-  }
-  
-  else {
-      console.log('A koruk megegyezik.');
-      }
-};
 
+const selectAge = (obj) => {
+    let ev = obj[0].age;
+    let index = 0;
+    for (let i = 1; i < obj.length; i++){
+        if (ev < obj[i].age){
+            ev = obj[i].age;
+            index = i;
+        }
+    }
+    return obj[index].name;
+}
 
-// const selectAge = (obj) => {
-//     let ev = obj[0].age;
-//     let index = 0;
-//     for (let i = 1; i < obj.length; i++){
-//         if (ev < obj[i].age){
-//             ev = obj[i].age;
-//             index = i;
-//         }
-//     }
-//     return obj[index].name;
-// }
-
-// console.log(selectAge({name: 'Feri', age: 25}, {name: 'Mari', age: 13}, {name: 'Jani', age: 23}, {name: 'Juli', age: 46}));
+console.log(selectAge({name: 'Feri', age: 25}, {name: 'Mari', age: 13}, {name: 'Jani', age: 23}, {name: 'Juli', age: 46}));
 
 //NEM JÓÓÓÓ
 
